@@ -54,12 +54,41 @@ header {
     margin: 0 auto;
 }
 
+/* Main Layout */
+.main-layout {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 4rem;
+}
+
+.tutorial-sidebar {
+    flex: 0 0 300px;
+    /* Fixed width for sidebar */
+}
+
+.tutorial-card {
+    height: 100%;
+    border: 2px solid var(--primary-color);
+    background: #f8fafc;
+}
+
+.tutorial-icon {
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+.tutorial-footer {
+    color: #ea580c !important;
+    /* Distinct Orange Color */
+}
+
 /* Projects Grid */
 .projects-grid {
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 0;
 }
 
 .project-card {
@@ -68,7 +97,7 @@ header {
     overflow: hidden;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     transition: var(--transition);
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -151,7 +180,16 @@ footer {
     .header-content h1 {
         font-size: 2rem;
     }
-    
+
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .tutorial-sidebar {
+        flex: auto;
+        width: 100%;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }

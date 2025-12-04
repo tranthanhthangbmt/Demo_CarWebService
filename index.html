@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
@@ -19,7 +21,26 @@
         </div>
     </header>
 
-    <main class="container">
+    <main class="container main-layout">
+        <!-- Left Column: Tutorial -->
+        <aside class="tutorial-sidebar">
+            <a href="tutorial.html" class="project-card tutorial-card">
+                <div class="card-icon tutorial-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Hướng Dẫn Đồ Án</h2>
+                    <p class="card-desc">Quy trình xây dựng web với Google Antigravity. Từ cài đặt, prompting đến nộp
+                        bài GitHub.</p>
+                    <div class="card-footer tutorial-footer">
+                        <span>Xem Ngay</span>
+                        <i class="fas fa-arrow-right arrow-icon"></i>
+                    </div>
+                </div>
+            </a>
+        </aside>
+
+        <!-- Right Column: Projects -->
         <div class="projects-grid">
             <!-- Project 1 -->
             <a href="Web1/index.html" class="project-card">
@@ -43,7 +64,8 @@
                 </div>
                 <div class="card-content">
                     <h2 class="card-title">Sàn Xe Lướt</h2>
-                    <p class="card-desc">Sàn mua bán xe cũ đã qua kiểm định. "Chuẩn Kỹ Sư Duyệt" với 100 điểm kỹ thuật.</p>
+                    <p class="card-desc">Sàn mua bán xe cũ đã qua kiểm định. "Chuẩn Kỹ Sư Duyệt" với 100 điểm kỹ thuật.
+                    </p>
                     <div class="card-footer">
                         <span>Truy cập Website</span>
                         <i class="fas fa-arrow-right arrow-icon"></i>
@@ -58,7 +80,8 @@
                 </div>
                 <div class="card-content">
                     <h2 class="card-title">Wiki Ô Tô</h2>
-                    <p class="card-desc">Cẩm nang kỹ thuật cho dân văn phòng. Giải ngố về đèn báo, dầu nhớt và kỹ thuật xe.</p>
+                    <p class="card-desc">Cẩm nang kỹ thuật cho dân văn phòng. Giải ngố về đèn báo, dầu nhớt và kỹ thuật
+                        xe.</p>
                     <div class="card-footer">
                         <span>Truy cập Website</span>
                         <i class="fas fa-arrow-right arrow-icon"></i>
@@ -90,4 +113,5 @@
     </footer>
 
 </body>
+
 </html>
