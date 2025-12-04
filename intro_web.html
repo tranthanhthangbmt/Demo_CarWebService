@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập Môn Lập Trình Web - Dành Cho Dân Ô Tô</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tutorial-section {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .tutorial-step {
+            margin-bottom: 40px;
+            padding-left: 20px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .tutorial-step h3 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .code-block {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Consolas', monospace;
+            margin: 15px 0;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            border: 1px solid #334155;
+        }
+
+        .concept-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+            display: block;
+        }
+
+        .analogy-box {
+            background-color: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .analogy-title {
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html" class="back-to-menu-btn"
+        style="position: fixed; top: 20px; left: 20px; background-color: #2563eb; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 9999; display: flex; align-items: center; gap: 8px;">
+        <i class="fas fa-arrow-left"></i> Trang Chủ
+    </a>
+
+    <header>
+        <div class="container header-content">
+            <h1>Nhập Môn Lập Trình Web</h1>
+            <p>Giải thích siêu đơn giản cho sinh viên ngành Ô Tô</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="tutorial-section">
+            <h2 style="margin-bottom: 30px; text-align: center;">Web Cũng Giống Như Một Chiếc Xe Ô Tô</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 40px; color: #64748b;">
+                Để xây dựng một trang web, chúng ta cần 3 thành phần chính: <strong>HTML, CSS và JavaScript</strong>.
+                Hãy tưởng tượng trang web chính là một chiếc xe ô tô hoàn chỉnh.
+            </p>
+
+            <!-- HTML Section -->
+            <div class="tutorial-step">
+                <h3><i class="fas fa-bone"></i> 1. HTML - Khung Gầm (Chassis)</h3>
+                <div class="analogy-box">
+                    <span class="analogy-title">Góc nhìn Ô Tô:</span>
+                    HTML chính là <strong>Khung Gầm (Chassis)</strong> của xe. Nó định hình cấu trúc: đâu là đầu xe, đâu
+                    là bánh xe, đâu là cửa. Chưa có sơn, chưa có nội thất, chưa chạy được, chỉ là bộ khung sườn thôi.
+                </div>
+
+                <!-- SVG Chassis -->
+                <div class="concept-image" style="background: #f8fafc; padding: 20px; text-align: center;">
+                    <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Chassis Frame -->
+                        <path d="M50,100 L350,100 M100,100 L100,50 L300,50 L300,100 M50,100 L50,130 M350,100 L350,130"
+                            stroke="#334155" stroke-width="8" fill="none" />
+                        <!-- Wheels (Outlines) -->
+                        <circle cx="80" cy="130" r="30" stroke="#334155" stroke-width="5" fill="none" />
+                        <circle cx="320" cy="130" r="30" stroke="#334155" stroke-width="5" fill="none" />
+                        <text x="200" y="180" font-family="Arial" font-size="14" text-anchor="middle"
+                            fill="#64748b">HTML: Cấu trúc khung sườn (Chưa có màu sắc)</text>
+                    </svg>
+                </div>
+
+                <p>Trong lập trình web, HTML tạo ra các phần tử cơ bản như tiêu đề, đoạn văn, nút bấm.</p>
+
+                <div class="code-block">&lt;!-- Đây là cấu trúc HTML --&gt;
+                    &lt;div class="xe-o-to"&gt;
+                    &lt;h1&gt;Xe VinFast VF8&lt;/h1&gt;
+                    &lt;button&gt;Còi Xe&lt;/button&gt;
+                    &lt;/div&gt;</div>
+            </div>
+
+            <!-- CSS Section -->
+            <div class="tutorial-step">
+                <h3><i class="fas fa-paint-roller"></i> 2. CSS - Ngoại Thất & Sơn (Body & Paint)</h3>
+                <div class="analogy-box">
+                    <span class="analogy-title">Góc nhìn Ô Tô:</span>
+                    CSS chính là <strong>Sơn, Body kit và Nội thất</strong>. Nó làm cho cái khung sắt thô kệch trở nên
+                    đẹp đẽ, sang trọng. Màu đỏ Ferrari, ghế da bò, mâm đúc... tất cả là nhờ CSS.
+                </div>
+
+                <!-- SVG Paint -->
+                <div class="concept-image" style="background: #f8fafc; padding: 20px; text-align: center;">
+                    <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Car Body -->
+                        <path d="M50,100 L350,100 L350,130 L50,130 Z" fill="#ef4444" /> <!-- Red Paint -->
+                        <path d="M100,100 L100,50 L300,50 L300,100 Z" fill="#ef4444" /> <!-- Top -->
+                        <rect x="110" y="60" width="180" height="30" fill="#bfdbfe" /> <!-- Windows -->
+                        <!-- Wheels (Styled) -->
+                        <circle cx="80" cy="130" r="30" fill="#1e293b" />
+                        <circle cx="80" cy="130" r="15" fill="#94a3b8" />
+                        <circle cx="320" cy="130" r="30" fill="#1e293b" />
+                        <circle cx="320" cy="130" r="15" fill="#94a3b8" />
+                        <text x="200" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="#ef4444"
+                            font-weight="bold">CSS: Thêm màu sắc & kiểu dáng</text>
+                    </svg>
+                </div>
+
+                <p>CSS giúp bạn chỉnh màu sắc, kích thước, bố cục để trang web nhìn "xịn" hơn.</p>
+
+                <div class="code-block">/* Đây là CSS làm đẹp */
+                    .xe-o-to {
+                    background-color: red; /* Sơn màu đỏ */
+                    border-radius: 10px; /* Bo tròn góc */
+                    padding: 20px; /* Nội thất rộng rãi */
+                    }</div>
+            </div>
+
+            <!-- JS Section -->
+            <div class="tutorial-step">
+                <h3><i class="fas fa-bolt"></i> 3. JavaScript - Động Cơ & Điện (Engine & Electronics)</h3>
+                <div class="analogy-box">
+                    <span class="analogy-title">Góc nhìn Ô Tô:</span>
+                    JavaScript (JS) chính là <strong>Động cơ, ECU và Hệ thống điện</strong>. Nó giúp chiếc xe "sống"
+                    dậy: bấm còi kêu bim bim, đạp ga xe chạy, bật đèn sáng. Nếu không có JS, chiếc xe chỉ là mô hình
+                    tĩnh trưng bày thôi.
+                </div>
+
+                <!-- SVG Engine -->
+                <div class="concept-image" style="background: #f8fafc; padding: 20px; text-align: center;">
+                    <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Car with Action -->
+                        <path d="M50,100 L350,100 L350,130 L50,130 Z" fill="#ef4444" />
+                        <path d="M100,100 L100,50 L300,50 L300,100 Z" fill="#ef4444" />
+                        <rect x="110" y="60" width="180" height="30" fill="#bfdbfe" />
+                        <circle cx="80" cy="130" r="30" fill="#1e293b" />
+                        <circle cx="320" cy="130" r="30" fill="#1e293b" />
+
+                        <!-- Headlights On -->
+                        <path d="M350,110 L400,90 L400,130 Z" fill="#facc15" opacity="0.8" />
+                        <circle cx="350" cy="110" r="5" fill="#fef08a" />
+
+                        <!-- Sound Waves -->
+                        <path d="M30,80 Q10,100 30,120" stroke="#f59e0b" stroke-width="3" fill="none" />
+                        <path d="M20,70 Q-10,100 20,130" stroke="#f59e0b" stroke-width="3" fill="none" />
+
+                        <text x="200" y="180" font-family="Arial" font-size="14" text-anchor="middle" fill="#eab308"
+                            font-weight="bold">JS: Đèn sáng, Còi kêu (Tương tác)</text>
+                    </svg>
+                </div>
+
+                <p>JS xử lý các hành động của người dùng: khi click chuột, khi nhập dữ liệu, v.v.</p>
+
+                <div class="code-block">// Đây là JavaScript xử lý hành động
+                    function bamCoi() {
+                    alert("Bim Bim! Tránh đường nào!");
+                    batDenPha(); // Gọi hàm bật đèn
+                    }</div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <p style="margin-bottom: 20px; font-size: 1.2rem;">Đã hiểu cơ bản rồi chứ? Giờ thì bắt tay vào làm đồ án
+                    thôi!</p>
+                <a href="tutorial.html" class="btn"
+                    style="background: var(--primary-color); color: white; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);">
+                    Xem Hướng Dẫn Đồ Án <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Đồ Án Sinh Viên - Đại Học Đông Á</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
