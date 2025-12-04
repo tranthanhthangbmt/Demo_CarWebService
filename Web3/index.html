@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Ô Tô Cho Dân Văn Phòng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="../index.html" class="back-to-menu-btn">⬅ Trang Chủ</a>
+
+    <header>
+        <h1>Wiki Ô Tô 🚗</h1>
+        <p>Cẩm nang "chữa mù" kỹ thuật cho dân văn phòng</p>
+        <img src="images/hero_bg.png" alt="Happy Car" class="hero-image">
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <!-- Card 1: Warning Lights -->
+            <div class="card" onclick="openModal('warning')">
+                <img src="images/icon_engine.png" alt="Check Engine">
+                <h3>Đèn Báo Sáng?</h3>
+                <p>Đừng hoảng! Xe chỉ đang muốn "tâm sự" chút thôi.</p>
+            </div>
+
+            <!-- Card 2: Oil Change -->
+            <div class="card" onclick="openModal('oil')">
+                <img src="images/icon_oil.png" alt="Oil Change">
+                <h3>Khi Nào Thay Dầu?</h3>
+                <p>Xe cũng cần uống nước ngọt để chạy khỏe đấy!</p>
+            </div>
+
+            <!-- Card 3: Flooded Car -->
+            <div class="card" onclick="openModal('water')">
+                <img src="images/icon_water.png" alt="Flooded Car">
+                <h3>Xe Lội Nước</h3>
+                <p>Bí kíp sinh tồn khi phố biến thành sông.</p>
+            </div>
+
+            <!-- Card 4: ABS -->
+            <div class="card" onclick="openModal('abs')">
+                <img src="images/icon_abs.png" alt="ABS">
+                <h3>Phanh ABS là gì?</h3>
+                <p>Công nghệ giúp bạn không "xòe" khi phanh gấp.</p>
+            </div>
+        </div>
+
+        <div class="ai-section">
+            <h2>🤖 Góc Giải Ngố AI</h2>
+            <div class="ai-content">
+                <h3>Câu hỏi: "Giải thích phanh ABS cho học sinh lớp 5"</h3>
+                <p>
+                    Hãy tưởng tượng bạn đang chạy thật nhanh và muốn dừng lại. Nếu bạn phanh "két" một cái thật mạnh
+                    (khóa bánh), bạn sẽ trượt dài như đi giày trượt băng vậy, rất nguy hiểm! 😱
+                    <br><br>
+                    <strong>ABS (Anti-lock Braking System)</strong> giống như một người trợ lý siêu nhanh nhẹn. Thay vì
+                    đạp chết phanh, người trợ lý này sẽ giúp bạn <strong>"nhấp - nhả" phanh liên tục</strong> (hàng chục
+                    lần mỗi giây!).
+                    <br><br>
+                    👉 Kết quả: Bánh xe không bị trượt, và bạn vẫn có thể bẻ lái để né chướng ngại vật. An toàn tuyệt
+                    đối! ✅
+                </p>
+            </div>
+            <!-- Decorative element -->
+            <div style="font-size: 5em; position: absolute; bottom: 10px; right: 20px; opacity: 0.5;">🎓</div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-warning" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('warning')">&times;</span>
+            <h2>Đèn Báo Sáng 💡</h2>
+            <p>Thấy đèn vàng hoặc đỏ sáng lên trên bảng điều khiển?</p>
+            <ul>
+                <li><strong>Màu Vàng:</strong> "Ê, kiểm tra tui nha, nhưng vẫn đi được." (Ví dụ: Áp suất lốp, động cơ).
+                </li>
+                <li><strong>Màu Đỏ:</strong> "DỪNG LẠI NGAY!" (Ví dụ: Hết dầu, quá nhiệt, phanh hỏng).</li>
+            </ul>
+            <p>👉 <strong>Lời khuyên:</strong> Nếu thấy đèn đỏ, tấp vào lề và gọi cứu hộ ngay nhé!</p>
+        </div>
+    </div>
+
+    <div id="modal-oil" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('oil')">&times;</span>
+            <h2>Thay Dầu Nhớt 🛢️</h2>
+            <p>Dầu nhớt giống như máu của xe vậy. Nó giúp động cơ trơn tru và mát mẻ.</p>
+            <ul>
+                <li><strong>Bao lâu thay 1 lần?</strong> Thường là mỗi 5,000km hoặc 6 tháng.</li>
+                <li><strong>Quên thay thì sao?</strong> Xe sẽ bị "ốm", chạy ì ạch và tốn xăng hơn.</li>
+            </ul>
+            <p>👉 <strong>Mẹo:</strong> Dán tem nhắc nhở lên kính lái để không quên nhé!</p>
+        </div>
+    </div>
+
+    <div id="modal-water" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('water')">&times;</span>
+            <h2>Xử Lý Khi Ngập Nước 🌊</h2>
+            <p>Mùa mưa đến rồi, "Ninja Lead" cần nhớ kỹ:</p>
+            <ol>
+                <li><strong>Tuyệt đối KHÔNG nổ máy</strong> nếu xe bị chết máy giữa dòng nước. Nổ máy lúc này là "toang"
+                    động cơ đấy!</li>
+                <li><strong>Tắt hết thiết bị điện</strong> (điều hòa, đài).</li>
+                <li><strong>Gọi cứu hộ</strong> ngay lập tức.</li>
+            </ol>
+            <p>👉 <strong>Thần chú:</strong> "Chết máy thì dắt, cấm được đề!"</p>
+        </div>
+    </div>
+
+    <div id="modal-abs" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('abs')">&times;</span>
+            <h2>Phanh ABS 🛑</h2>
+            <p>Xem phần "Góc Giải Ngố AI" bên dưới để hiểu rõ hơn nhé!</p>
+            <p>Hệ thống này tự động kích hoạt khi bạn phanh gấp. Bạn sẽ cảm thấy chân phanh "rung rung" - đó là bình
+                thường, đừng nhả chân ra nhé!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

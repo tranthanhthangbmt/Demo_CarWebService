@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sàn Xe Lướt - Chuẩn Kỹ Sư Duyệt</title>
+    <meta name="description" content="Sàn mua bán xe cũ uy tín, đã qua kiểm định 100 điểm kỹ thuật bởi kỹ sư ô tô.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <a href="../index.html" class="back-to-menu-btn">⬅ Trang Chủ</a>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-car-side"></i> Sàn Xe Lướt
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                    <li><a href="#showroom" class="nav-link">Showroom</a></li>
+                    <li><a href="#checklist" class="nav-link">Quy trình 100 điểm</a></li>
+                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <button class="btn btn-primary">Đăng bán xe</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">An Tâm Tuyệt Đối Với Xe Đã Qua Kiểm Định</h1>
+            <p class="hero-subtitle">Sàn Xe Lướt - Nơi duy nhất xe được "Chuẩn Kỹ Sư Duyệt" với checklist 100 điểm kỹ
+                thuật. Nói không với xe đâm đụng, ngập nước.</p>
+            <div class="hero-actions">
+                <a href="#showroom" class="btn btn-primary btn-lg">Xem xe ngay</a>
+                <a href="#checklist" class="btn btn-outline btn-lg">Xem quy trình kiểm định</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Trust Signals -->
+    <section id="checklist" class="features section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Tại Sao Chọn Chúng Tôi?</h2>
+                <p class="section-desc">Quy trình kiểm tra nghiêm ngặt bảo vệ quyền lợi người mua.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                    <h3>Check-list 100 Điểm</h3>
+                    <p>Mỗi chiếc xe đều trải qua 100 hạng mục kiểm tra kỹ thuật chi tiết từ động cơ, khung gầm đến nội
+                        thất.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3>Kỹ Sư Duyệt</h3>
+                    <p>Đội ngũ sinh viên và kỹ sư ô tô trực tiếp kiểm tra và đánh giá tình trạng thực tế của xe.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-rotate-left"></i></div>
+                    <h3>Bảo Hành Uy Tín</h3>
+                    <p>Cam kết hoàn tiền nếu phát hiện lỗi sai lệch với kết quả kiểm định ban đầu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showroom Section -->
+    <section id="showroom" class="showroom section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Xe Đang Bán</h2>
+                <p class="section-desc">Các mẫu xe hot nhất vừa cập bến, đã qua kiểm định.</p>
+            </div>
+
+            <!-- Filter (Mockup) -->
+            <div class="filter-bar">
+                <button class="filter-btn active">Tất cả</button>
+                <button class="filter-btn">Sedan</button>
+                <button class="filter-btn">SUV</button>
+                <button class="filter-btn">Hatchback</button>
+            </div>
+
+            <div class="car-grid" id="car-list">
+                <!-- Car items will be injected here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Sàn Xe Lướt</h3>
+                <p>Uy tín tạo nên thương hiệu. Đồng hành cùng bạn trên mọi nẻo đường.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Liên kết</h3>
+                <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Liên hệ</h3>
+                <p><i class="fa-solid fa-phone"></i> 0909 123 456</p>
+                <p><i class="fa-solid fa-envelope"></i> contact@sanxeluot.vn</p>
+                <p><i class="fa-solid fa-location-dot"></i> Đà Nẵng, Việt Nam</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2025 Sàn Xe Lướt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Car Detail Modal -->
+    <div id="car-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
